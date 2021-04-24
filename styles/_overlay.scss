@@ -1,0 +1,91 @@
+@import "./colors";
+
+#overlay {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+}
+
+#left-panel {
+  position: absolute;
+  z-index: 11;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: $color-main;
+}
+
+.panel-wrapper {
+  opacity: 0;
+}
+
+#right-panel {
+  position: absolute;
+  z-index: 11;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: $color-main;
+}
+
+#overlay-content {
+  position: relative;
+  z-index: 11;
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  opacity: 0;
+
+  width: 50%;
+  margin: auto;
+}
+
+.nav-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 10rem 0;
+
+  a {
+    text-decoration: none;
+    color: $color-bacground;
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+#logo-overlay {
+  position: relative;
+
+  top: 1rem;
+  transform: translate(100%, 0);
+  right: 90%;
+}
+
+#burger-menu-close {
+  position: relative;
+  top: 1rem;
+  transform: translate(-100%, 0);
+  left: 90%;
+
+  width: 42px;
+  height: $burger-height;
+
+  cursor: pointer;
+
+  z-index: 13;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .burger-line {
+    width: 100%;
+    height: $burger-line-size;
+    border-radius: $burger-line-size;
+    background-color: $color-bacground;
+  }
+}

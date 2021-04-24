@@ -2,7 +2,7 @@
 @import "./variabels";
 
 header {
-  background-color: $main;
+  background-color: $color-main;
   height: $header-height;
   width: 100%;
 }
@@ -20,6 +20,8 @@ header {
   width: 42px;
   height: $burger-height;
 
+  cursor: pointer;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,13 +30,10 @@ header {
     width: 100%;
     height: $burger-line-size;
     border-radius: $burger-line-size;
-    background-color: $bacground;
+    background-color: $color-bacground;
   }
 }
 
 .logo {
-  color: $text;
-  background-color: wheat;
-  padding: 0.25rem;
-  border-radius: 5px;
+  color: $color-text;
 }

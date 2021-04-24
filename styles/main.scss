@@ -1,6 +1,7 @@
 @import "./header";
 @import "./colors";
 @import "./page";
+@import "./overlay";
 
 * {
   margin: 0;
@@ -10,5 +11,5 @@
 }
 
 body {
-  background-color: $bacground;
+  background-color: $color-bacground;
 }
