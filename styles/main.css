@@ -1,7 +1,77 @@
+header {
+  background-color: #58355e;
+  height: 64px;
+  width: 100%;
+}
+
+.header-wrapper {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger-menu {
+  width: 42px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.burger-menu .burger-line {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #f3fcec;
+}
+
+.logo {
+  color: #1b0f1d;
+  background-color: wheat;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 64px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1b0f1d;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #f3fcec;
 }
 /*# sourceMappingURL=main.css.map */

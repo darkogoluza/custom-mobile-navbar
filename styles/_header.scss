@@ -1,0 +1,40 @@
+@import "./colors";
+@import "./variabels";
+
+header {
+  background-color: $main;
+  height: $header-height;
+  width: 100%;
+}
+
+.header-wrapper {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-menu {
+  width: 42px;
+  height: $burger-height;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .burger-line {
+    width: 100%;
+    height: $burger-line-size;
+    border-radius: $burger-line-size;
+    background-color: $bacground;
+  }
+}
+
+.logo {
+  color: $text;
+  background-color: wheat;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
