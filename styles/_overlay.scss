@@ -49,11 +49,18 @@
   height: 100%;
   padding: 10rem 0;
 
-  a {
-    text-decoration: none;
+  p {
     color: $color-bacground;
     font-size: 2em;
     text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+
+    &:hover {
+      font-weight: bold;
+      font-size: 3em;
+    }
   }
 }
 
@@ -78,14 +85,22 @@
 
   z-index: 13;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   .burger-line {
     width: 100%;
     height: $burger-line-size;
     border-radius: $burger-line-size;
     background-color: $color-bacground;
+  }
+  .burger-line:first-child {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotateZ(45deg);
+  }
+  .burger-line:last-child {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotateZ(-45deg);
   }
 }
